@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotionMind</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#F7F7F7] font-['Inter',sans-serif] overflow-x-hidden">
+    <!-- ================= NAVBAR ================= -->
+    <section class="w-full bg-[#F7F7F7]">
+      <header
+        class="w-full flex flex-col lg:flex-row px-4 lg:px-10 py-4 items-center relative"
+      >
+        <!-- Logo + Hamburger -->
+        <div
+          class="w-full lg:w-[20%] flex justify-between lg:justify-center items-center"
+        >
+          <img
+            src="https://notionmind.com/images/Notionmind-logo.svg"
+            class="w-36 lg:w-50"
+          />
+
+          <!-- Hamburger -->
+          <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5">
+            <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+            <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+            <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+          </button>
+        </div>
+
+        <!-- NAV -->
+        <nav
+          id="mobileMenu"
+          class="w-full lg:w-[60%] hidden lg:block mt-6 lg:mt-0 transition-all duration-300"
+        >
+          <ul
+            class="w-full flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-6 lg:gap-0 text-lg lg:text-2xl"
+          >
+            <li>
+              <a href="#" class="hover:text-[#103FB8] hover:font-bold"
+                >Case Studies</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#103FB8] hover:font-bold"
+                >Capabilities</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#103FB8] hover:font-bold"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#103FB8] hover:font-bold"
+                >Enterprise</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#103FB8] hover:font-bold">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- CTA -->
+        <div
+          class="w-full lg:w-[20%] flex justify-center items-center mt-6 lg:mt-0"
+        >
+          <button
+            class="font-semibold px-8 lg:px-10 py-3 lg:py-4 bg-black hover:bg-[#103FB8] rounded-full text-white transition-all duration-200"
+          >
+            Get in touch
+          </button>
+        </div>
+      </header>
+    </section>
+
+    <!-- ================= HERO ================= -->
+    <main
+      class="w-full min-h-screen lg:h-125 flex flex-col justify-center items-center gap-6 px-4 text-center"
+    >
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-linear-to-r from-[#1D1D1F] to-[#0887FF] bg-clip-text text-transparent leading-tight"
+      >
+        Accelerate Growth & Solve <br class="hidden sm:block" />
+        Unique Challenges.
+      </h1>
+
+      <p class="text-base sm:text-lg max-w-2xl">
+        Our personalized AI services, digital platforms, and data-powered
+        systems enable unified solutions that competitors can't imitate.
+      </p>
+
+      <button
+        class="px-7 py-3 text-white text-lg bg-black rounded-full mt-5 hover:bg-[#103FB8] transition-all duration-200"
+      >
+        Start Conversation
+      </button>
+    </main>
+
+    <!-- ================= STATS GRID (SAFE RESPONSIVE) ================= -->
+    <section class="w-full py-16">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[90%] mx-auto"
+      >
+        <!-- Card -->
+        <div
+          class="p-8 rounded-2xl bg-[#dff1f0] border-b-[6px] border-[#7CC8BF]"
+        >
+          <h1 class="text-5xl lg:text-8xl font-semibold text-[#018473]">
+            2.5x
+          </h1>
+          <p class="text-[#017464] mt-3">Stop Guessing. Gain Clarity.</p>
+        </div>
+
+        <div
+          class="p-8 rounded-2xl bg-[#DBEDFF] border-b-[6px] border-[#79B8FF]"
+        >
+          <h1 class="text-5xl lg:text-8xl font-semibold text-[#005CC5]">3x</h1>
+          <p class="text-[#005CC5] mt-3">Less Chaos, Get More Done.</p>
+        </div>
+
+        <div
+          class="p-8 rounded-2xl bg-[#FFEBDA] border-b-[6px] border-[#FFAB70]"
+        >
+          <h1 class="text-5xl lg:text-8xl font-semibold text-[#E36209]">3x</h1>
+          <p class="text-[#A04100] mt-3">Built to Scale Enterprises.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA SECTION ================= -->
+    <section class="py-16 px-4">
+      <div
+        class="w-full max-w-7xl mx-auto rounded-4xl p-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left bg-linear-to-r from-[#2B3135] to-[#090A0B]"
+      >
+        <h2 class="text-2xl md:text-4xl text-white">
+          Ready to make a difference and write your next success story?
+        </h2>
+        <button
+          class="bg-white hover:bg-black hover:text-white text-black px-6 py-3 rounded-full transition-all"
+        >
+          Start a Conversation
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-white mt-16 py-12">
+      <div
+        class="w-[90%] mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-10 text-sm md:text-base"
+      >
+        <div>
+          <h3 class="text-gray-500 mb-4">Location</h3>
+          <p>Ahmedabad, Mumbai</p>
+          <p>USA, Spain</p>
+        </div>
+
+        <div>
+          <h3 class="text-gray-500 mb-4">Get in touch</h3>
+          <p>+91 98985 58679</p>
+          <p>+1 844.360.7360</p>
+        </div>
+
+        <div>
+          <h3 class="text-gray-500 mb-4">Contact</h3>
+          <p>info@notionmind.com</p>
+          <p>Book a call</p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <img
+          src="https://notionmind.com/images/Notionmind-Outline-logo.svg"
+          class="mx-auto w-40"
+        />
+      </div>
+    </footer>
+
+    <!-- ================= HAMBURGER SCRIPT ================= -->
+    <script>
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('mobileMenu');
+      const spans = btn.querySelectorAll('span');
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+
+        spans[0].classList.toggle('rotate-45');
+        spans[0].classList.toggle('translate-y-2');
+
+        spans[1].classList.toggle('opacity-0');
+
+        spans[2].classList.toggle('-rotate-45');
+        spans[2].classList.toggle('-translate-y-2');
+      });
+    </script>
+  </body>
+</html>
